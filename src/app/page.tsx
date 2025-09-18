@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn_tw_merger";
-import { Button } from "@/components/ui";
+import  Button  from "../components/ui/button";
 import { useState } from 'react';
 
 // Reusable SVG icons for features
