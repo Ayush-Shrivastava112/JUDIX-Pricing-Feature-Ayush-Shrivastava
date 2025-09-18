@@ -3,7 +3,7 @@ export { default as Button } from "./button";
 export * from "./calendar";
 export * from "./card";
 export * from "./checkbox";
-export * from "./dialog";
+// export * from "./dialog";
 export * from "./iconButton";
 export * from "./inputField";
 export * from "./menuField"; // Export the new component
