@@ -269,7 +269,7 @@ export default function App() {
           <div>
             <h3 className="text-h3 font-semibold text-[#000000]">Ask your research queries directly on <span className="text-[#30A381]">WhatsApp</span></h3>
             <p className="mt-2 text-body-md text-neutral-600">
-              Instant legal research on the go. Perfect for when you're away from your desk, in transit, or need quick clarity. Uses your existing usage quota.
+              Instant legal research on the go. Perfect for when you&apos;re away from your desk, in transit, or need quick clarity. Uses your existing usage quota.
             </p>
             <ul className="mt-4 space-y-2 text-neutral-600 text-body-sm">
               <li className="flex items-center">
