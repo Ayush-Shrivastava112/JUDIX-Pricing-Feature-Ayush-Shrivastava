@@ -22,7 +22,7 @@ npm install
 npm run dev
 ```
 
-The app runs at http://localhost:3000
+The app runs at https://judix-pricing-feature-ayush-shrivas-phi.vercel.app/
 
 To build and run a production bundle:
 
