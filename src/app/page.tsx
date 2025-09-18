@@ -3,6 +3,7 @@
 import { cn } from "@/utils/cn_tw_merger";
 import  Button  from "../components/ui/button";
 import { useState } from 'react';
+import Image from 'next/image';
 
 // Reusable SVG icons for features
 const CheckIcon = () => (
@@ -155,14 +156,7 @@ const faqs = [
   },
 ];
 
-const SocialIcon = ({ d, title }: { d: string; title: string }) => (
-  <a href="#" className="text-white hover:text-neutral-400">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-      <title>{title}</title>
-      <path d={d} />
-    </svg>
-  </a>
-);
+
 
 export default function App() {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -179,7 +173,7 @@ export default function App() {
       {/* Navbar */}
       <nav className="w-full max-w-6xl mx-auto flex items-center justify-between py-6">
         <div className="flex items-center space-x-2">
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAb1BMVEX///8KKD4TMEUSL0QeOU3o6+38/Pzz9PVjdoRMYnLZ3uFRZnZdcX/t7/Gapq9qfIqPnackP1M8VGXCys9XbHtxgo+4wcdFXGyFlJ/S2Nzh5Oertb0qRFcxSl1ugI15iZWyu8K9xcs5UWOlsLiJmKL65O4QAAADyUlEQVR4nO2c2XLqOhBFkfGAzWRm7GDCcP7/G69z6+SUAckaoOhN1V7PeeiFLbnVrc5gQAghhBBCCCGEEEIIIYQQQgghb6KYHcfNMF5O9ttMOpZwqvlCddiV0gGFkczVPYeTdFABlMMHj5+nUkvH5Uk60Wm0RGfp0LzIdgaPlr10cB5ML2YPpUbS4TmT9Xp8jkm27PdQai4dohN96+OXo3SQDqS53UOpb+kwraRjFw98k3Tt5oG+Cxu/gxqgM6+Ru4dSM+lozTymiZ9p8u3nodRVOmI9e18PUJPS30OpL+moH5mFeCh1ko77nkAPOJNsP8+jMJOtdOyPnJw/6zcgnhkrx0zrhuFKOmwd54U98nsiSJPM+7OIajKorCfER5NKOmg9M+8NLAY1SZyOiTcmhXTMBq6+DwXWpPZdKbAm3tlwDFsXXsV+JgtYk8ShxNXlkEhHbCLVNxdgTZKqMkVQ+D0UuWN8Uk6a/0MYNuvZVPcXPl9HsaLw9e733pWalmft/HXcpe9XaEm+NbtSdNRsPVe3lHgn0/j9Y3pl1o8qmfGPO+Qiz6Pv3BFpqqHJ0eYh02qwHDoummS26D89iuxXRWP7ebVxrcyrvhE5Wp1dNtSxbuXWuv1B/y6+AceS4kJ7Vkq3o/ufId7L7FbuJXfTa3/er3+3isXyKFTX8mnlqFHPhpoUK2Ne8wZcW4R/ucAm5r61xBiz0NPuoH5puQJtgQxCTDYymaAVf5Ncm93L429yAK2+rbzriEPADtsPlX9LB3ShBJgsMRdKgIk+9RKn8qy9KdiFEmACerUpxGQJWUksAkwwU68QE8z7ZkEmOeLrVYeYxIj5cB3QVVdqDPhQwkwQH0p9CDFRO7ztKwkzUWO43meoiRqhVSaCTYYjsKcSbNK+YFhrJbEXtY1cvpDm+qZPmKhotMU5Pz5l0n5YjisUlydNWpd1iXGG7B8QcyNalyv59OUVJj8Mm/GmFL1Dax8Sc0f2MvDrTE6iHq8zka+3vMYEYUDmFSYIHm7jlP2gDJGlT5rglFncRkNNbKTD7/CMCdY4smcPuwPagHioyQQlBf6H+8hulzGcR5iJzA06G/4mQjcarXjdvmlZgnq0eJlccD28hsIbzKbvL84m0nfirTjetoP3cDTBnRvpsLF74M4k3WA1+RAPqwnqLKWG3uvnH+TRe+MZdSLUwNnUxm4+Yb/qUuvLqTlyXmLg9Fit3yH+awEHvm6O8tEEq+nmxXSWN4tIxYfl5CQdCyGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhDzDfwpXMJbuLei5AAAAAElFTkSuQmCC" alt="Logo" className="w-8 h-8" />
+          <Image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAb1BMVEX///8KKD4TMEUSL0QeOU3o6+38/Pzz9PVjdoRMYnLZ3uFRZnZdcX/t7/Gapq9qfIqPnackP1M8VGXCys9XbHtxgo+4wcdFXGyFlJ/S2Nzh5Oertb0qRFcxSl1ugI15iZWyu8K9xcs5UWOlsLiJmKL65O4QAAADyUlEQVR4nO2c2XLqOhBFkfGAzWRm7GDCcP7/G69z6+SUAckaoOhN1V7PeeiFLbnVrc5gQAghhBBCCCGEEEIIIYQQQgghb6KYHcfNMF5O9ttMOpZwqvlCddiV0gGFkczVPYeTdFABlMMHj5+nUkvH5Uk60Wm0RGfp0LzIdgaPlr10cB5ML2YPpUbS4TmT9Xp8jkm27PdQai4dohN96+OXo3SQDqS53UOpb+kwraRjFw98k3Tt5oG+Cxu/gxqgM6+Ru4dSM+lozTymiZ9p8u3nodRVOmI9e18PUJPS30OpL+moH5mFeCh1ko77nkAPOJNsP8+jMJOtdOyPnJw/6zcgnhkrx0zrhuFKOmwd54U98nsiSJPM+7OIajKorCfER5NKOmg9M+8NLAY1SZyOiTcmhXTMBq6+DwXWpPZdKbAm3tlwDFsXXsV+JgtYk8ShxNXlkEhHbCLVNxdgTZKqMkVQ+D0UuWN8Uk6a/0MYNuvZVPcXPl9HsaLw9e733pWalmft/HXcpe9XaEm+NbtSdNRsPVe3lHgn0/j9Y3pl1o8qmfGPO+Qiz6Pv3BFpqqHJ0eYh02qwHDoummS26D89iuxXRWP7ebVxrcyrvhE5Wp1dNtSxbuXWuv1B/y6+AceS4kJ7Vkq3o/ufId7L7FbuJXfTa3/er3+3isXyKFTX8mnlqFHPhpoUK2Ne8wZcW4R/ucAm5r61xBiz0NPuoH5puQJtgQxCTDYymaAVf5Ncm93L429yAK2+rbzriEPADtsPlX9LB3ShBJgsMRdKgIk+9RKn8qy9KdiFEmACerUpxGQJWUksAkwwU68QE8z7ZkEmOeLrVYeYxIj5cB3QVVdqDPhQwkwQH0p9CDFRO7ztKwkzUWO43meoiRqhVSaCTYYjsKcSbNK+YFhrJbEXtY1cvpDm+qZPmKhotMU5Pz5l0n5YjisUlydNWpd1iXGG7B8QcyNalyv59OUVJj8Mm/GmFL1Dax8Sc0f2MvDrTE6iHq8zka+3vMYEYUDmFSYIHm7jlP2gDJGlT5rglFncRkNNbKTD7/CMCdY4smcPuwPagHioyQQlBf6H+8hulzGcR5iJzA06G/4mQjcarXjdvmlZgnq0eJlccD28hsIbzKbvL84m0nfirTjetoP3cDTBnRvpsLF74M4k3WA1+RAPqwnqLKWG3uvnH+TRe+MZdSLUwNnUxm4+Yb/qUuvLqTlyXmLg9Fit3yH+awEHvm6O8tEEq+nmxXSWN4tIxYfl5CQdCyGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhDzDfwpXMJbuLei5AAAAAElFTkSuQmCC" alt="Logo" width={32} height={32} className="w-8 h-8" />
           <span className="font-bold text-lg text-neutral-900">Judix</span>
         </div>
         <div className="hidden md:flex items-center space-x-6">
@@ -369,7 +363,7 @@ export default function App() {
           </div>
         </div>
         <p className="mt-6 text-body-sm text-neutral-600">
-          On an average, every lawyer saves approx {hoursSaved} hours of billable hours on legal research while using Judix
+          On an average, every lawyer&apos;s saves approx {hoursSaved} hours of billable hours on legal research while using Judix
         </p>
       </section>
 
